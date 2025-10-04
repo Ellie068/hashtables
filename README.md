@@ -1,0 +1,3 @@
+# hash_tables
+
+This is class thingy majig i guess...
