@@ -1,0 +1,18 @@
+//list must be sorted.
+int? binarySearch(List<int> list, int target) {
+  int low = 0;
+  int high = list.length - 1;
+
+  while (low <= high) {
+    int mid = (high + low) ~/ 2;
+
+    if (list[mid] == target) {
+      return mid;
+    } else if (list[mid] < target) {
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+  return null;
+}
