@@ -28,6 +28,6 @@ class hashTable {
 
   Student? getStudent(int studentId) {
     final index = _hash(studentId);
-    return _bucket[studentId];
+    return _bucket[_hash(studentId)];
   }
 }
